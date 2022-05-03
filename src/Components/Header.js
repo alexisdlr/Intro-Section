@@ -3,7 +3,6 @@ import iconTodo from '../images/icon-todo.svg'
 import iconCalendar from '../images/icon-calendar.svg'
 import iconPlanning from '../images/icon-planning.svg'
 import iconRemind from '../images/icon-reminders.svg'
-import arrowUp from '../images/icon-arrow-up.svg'
 import {motion} from 'framer-motion'
 import logo from '../images/logo.svg'
 
@@ -59,6 +58,7 @@ export function DropDown () {
                 <span>
                     <img
                 className='iconB'
+                alt='icon'
                 src={props.src}
                 /></span>
                 {props.children}           
@@ -109,6 +109,7 @@ export function Header (props) {
             <div className='container-img'>
                 <img
                     className='img'
+                    alt='logo img'
                     src={logo} />
             </div>
             <nav className='navigation'>
@@ -145,7 +146,9 @@ export function NavItem (props) {
             onClick={() => setOPen(!open)}
             >
             {props.text}
-            <img src={props.src}></img>
+            <img src={props.src}
+            alt='img link'
+            ></img>
        
         </motion.a>
 

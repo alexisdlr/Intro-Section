@@ -28,15 +28,19 @@ export function Section () {
                 <div className='container-clients'>
                     <img 
                     src={dataBiz}
+                    alt='img client'
                     className='img'/>
                      <img 
+                     alt='img client'
                     src={maker}
                     className='img'/>
                      <img 
                     src={meet}
+                    alt='img client'
                     className='img'/> 
                     <img 
                     src={audioPhile}
+                    alt='img client'
                     className='img'/>
                 </div>
             </motion.div>
@@ -45,7 +49,9 @@ export function Section () {
             transition={{delay: .5}}
             animate={{x: 0}}
             className='container-img'>
-                <img className='img' src={image} />
+                <img className='img' 
+                alt='img banner'
+                src={image} />
             </motion.div>
         </section>
     )
