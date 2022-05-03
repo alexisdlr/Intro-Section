@@ -147,7 +147,6 @@ export function NavItem (props) {
             >
             {props.text}
             <img src={props.src}
-            alt='img link'
             ></img>
        
         </motion.a>
