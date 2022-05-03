@@ -1,0 +1,36 @@
+.header {
+    width: 100%;
+    display:flex;
+    font-size: 14px;
+    height: 80px;
+    .container-img {
+        width: 150px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navigation {
+        width: 100%;
+        display:flex;
+        .navigation__ul {
+            width: 100%;
+            display:flex;
+            align-items: center;
+        }
+    }
+    .container-log{
+        display:flex;
+        align-items: center;
+        margin-right: 1rem;
+    }
+    .link {
+        padding: .5rem 1rem ;
+        color: $medium-gray;
+        img {
+            margin-left: .3rem;
+        }
+    }
+    .link:nth-child(2) {
+        border-radius: 10px;
+    }
+}
