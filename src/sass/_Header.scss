@@ -3,6 +3,21 @@
     display:flex;
     font-size: 14px;
     height: 80px;
+    .dropDown {
+        position: absolute;
+        top: 58px;
+        width: 100px;
+        transform: translateX(45%);
+        background-color: #fff;
+        box-shadow: 0 0 8px 0px hsl(0, 0%, 60%);
+        border-radius:3px;
+        padding: 1rem;
+        overflow: hidden;
+        z-index: 999;
+        .iconB {
+            margin-right: 5px;
+        }
+    }
     .container-img {
         width: 150px;
         display:flex;
@@ -26,9 +41,16 @@
     .link {
         padding: .5rem 1rem ;
         color: $medium-gray;
+        position: relative;
         img {
             margin-left: .3rem;
         }
+    }
+    .dropDownItem {
+        color: $medium-gray;
+        display:flex;
+        justify-content: flex-start;
+        margin-bottom: 1rem;
     }
     .link:nth-child(2) {
         border-radius: 10px;
